@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Senior_project",
+    "description": "Welcome to our new blog, Senior_project. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2022-02-12",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-02-12T16:03:20-07:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2022-02-12-introduction/",
+    "title": "Introduction",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Justin Schultz",
+        "url": {}
+      }
+    ],
+    "date": "2022-02-12",
+    "categories": [],
+    "contents": "\r\nThis is my introduction\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-02-12T16:20:58-07:00",
+    "input_file": "introduction.knit.md"
+  }
+]
