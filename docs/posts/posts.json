@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/2022-02-12-introduction/",
+    "title": "Introduction",
+    "description": "Go hear to know what its all about!",
+    "author": [
+      {
+        "name": "Justin Schultz",
+        "url": {}
+      }
+    ],
+    "date": "2022-02-12",
+    "categories": [],
+    "contents": "\r\nMy name is Justin Schultz and I have been studying data science at Brigham Young University in Idaho and plan to graduate Fall of 2022. I have successfully taken Math 425, CS 450, and plan to take Math 488 in the near future. Currently I am working on finding an internship but would love to work for a small company and help them grow or work with medical data.\r\nFor my project I would like to analysis probabilities in some of my favorite tabletop game. Over the years I have loved playing games with my wife and family, and I have learned a few useful strategies in some of my favorite games. However, luck has always been a major part of most of these games. This does beg the question of if I am a lucky person or do my strategies work out in my favor. A game that I would like to take a deeper look into would be “Settlers of Catan”.\r\nTo be successful in this project. I would want to learn more about probability of dice roles and how that can affect the game of Catan. In order to understand probability better I would need to learn how to make simulations in R and/or Python and connect the different simulations to different scenarios that the player could find themselves in.\r\nIn the end of my project I want to be able to deliver a web app that would assist players in placing and building settlements and cities. I would like build upon Justin S. Lee’s Website by including things like rolling a 7 and losing cards and also finding a way to record game data for future analysis.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-02-12T17:06:02-07:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Senior_project",
+    "description": "Welcome to our new blog, Senior_project. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Justin Schultz",
+        "url": {}
+      }
+    ],
+    "date": "2022-02-12",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-02-12T17:06:25-07:00",
+    "input_file": {}
+  }
+]
