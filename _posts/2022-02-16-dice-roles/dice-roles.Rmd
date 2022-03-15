@@ -1,7 +1,7 @@
 ---
 title: "Dice roles"
 description: |
-  Let’s take a look into dice roles in the game of Catan.
+  Let’s take a look into dice roles in the game of Catan. We are going to be building a program that checks the amount of roles it takes to build a item.
 author:
   - name: Justin Schultz
     url: {}
@@ -114,7 +114,7 @@ Bringing it all together we have the following code.
 while True:
         if road == True and settlement == True \
         and city == True and devo == True:
-            my_list = [ro, s, c, d, rober]
+            my_list = [ro, s, c, d, robber]
             return my_list
         role = dice_role()
         count += 1
