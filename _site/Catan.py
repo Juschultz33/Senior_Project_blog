@@ -3,7 +3,7 @@
 from random import randint
 import pandas as pd
 import altair as alt
-from sqlalchemy import true
+import numpy as np
 
 # %%
 # Funtion to add 2 dice role together
@@ -133,9 +133,10 @@ def building_resource(card, n_brick=False, n_lumber=False, n_ore=False, three=Fa
 
     return s
 
-
-# %%
+ # %%
 # Check to see if you have the resorces to build
+
+
 def road_builder(card, three=False, t_brick=False, t_grain=False, t_ore=False, t_sheep=False):
     s = building_resource(card, n_brick=True, n_lumber=True, three=three, t_brick=t_brick,
                           t_grain=t_grain, t_ore=t_ore, t_sheep=t_sheep)
@@ -229,17 +230,17 @@ def builder(r, three=False, t_brick=False, t_grain=False, t_ore=False, t_sheep=F
 
 # %%
 # This is the recorse list.
-r = {"sheep": [8, 4],
-     'brick': [],
-     'ore': [6, 6],
-     'grain': [11],
-     'lumber': [2, 8]}
+r = {"sheep": [3, 3],
+     'brick': [4, 4],
+     'ore': [8],
+     'grain': [8],
+     'lumber': [4, 4, 2, 2, 2, 2]}
 
-card = {"sheep": 5,
+card = {"sheep": 0,
         'brick': 0,
-        'ore': 2,
+        'ore': 0,
         'grain': 0,
-        'lumber': 1}
+        'lumber': 0}
 
 three = False
 t_brick = False
@@ -313,7 +314,9 @@ a = alt.Chart(df).mark_boxplot(extent='min-max', color="darkblue").encode(
     x='settlement_builder'
 )
 
-c+a
+s_chart = c+a
+
+s_chart.save('s_chart.png')
 
 # %%
 c = alt.Chart(df).mark_bar(color='skyblue').encode(
@@ -328,3 +331,17 @@ a = alt.Chart(df).mark_boxplot(extent='min-max', color="darkblue").encode(
 c+a
 
 # %%
+catan = pd.read_csv('kaggle_catan_data.csv').filter(
+    ['gameNum', 'player', 'points', 's1_r1', 's1_r2', 's1_r3', 's1_n1', 's1_n2', 's1_n3',
+     's2_r1', 's2_r2', 's2_r3', 's2_n1', 's2_n2', 's2_n3'])
+catan
+# %%
+catan.replace(['L', 'W', 'S', 'O', 'C'], ['lumber', 'grain',
+              'sheep', 'ore', 'brick'], inplace=True)
+catan.replace(['D', '3G', '2W', '2L', '2S', '2C', '2O'], np.nan, inplace=True)
+catan
+
+# %%
+for i in range(0, 1):
+
+    # %%

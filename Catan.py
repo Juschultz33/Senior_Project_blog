@@ -230,11 +230,11 @@ def builder(r, three=False, t_brick=False, t_grain=False, t_ore=False, t_sheep=F
 
 # %%
 # This is the recorse list.
-r = {"sheep": [8, 4],
-     'brick': [10],
-     'ore': [6],
-     'grain': [11],
-     'lumber': [2]}
+r = {"sheep": [3, 3],
+     'brick': [4, 4],
+     'ore': [8],
+     'grain': [8],
+     'lumber': [4, 4, 2, 2, 2, 2]}
 
 card = {"sheep": 0,
         'brick': 0,
